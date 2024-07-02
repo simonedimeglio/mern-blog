@@ -56,7 +56,7 @@ Query: { eyeColor: { $nin: ["green", "blue"] } }
 
 7. Trova tutte le risorse con il dato company uguale a "FITCORE" e ritorna solo l'email:
 ```javascript
-Query: { company: "FITCORE" } Projection: { email: 1, _id: 0 }
+Query: { company: "FITCORE" } Project: { email: 1, _id: 0 }
 ```
 > La prima parte trova i documenti con company "FITCORE". La seconda parte (projection) specifica di mostrare solo il campo email (1) e di escludere l'_id (0).
 
